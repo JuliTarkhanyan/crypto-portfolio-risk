@@ -1,0 +1,34 @@
+{
+  "id": "4618",
+  "name": "Internet Computer",
+  "address": "icp:ryjl3-tyaaa-aaaaa-aaaba-cai",
+  "symbol": "ICP",
+  "url": "https://internetcomputer.org/",
+  "description": "Compute on blockchain.",
+  "chain": "ICP",
+  "logo": "https://icons.llamao.fi/icons/protocols/icp",
+  "audits": "0",
+  "gecko_id": "internet-computer",
+  "cmcId": "8916",
+  "category": "Chain",
+  "chains": [
+    "ICP"
+  ],
+  "module": "dummy.js",
+  "twitter": "dfinity",
+  "tvlCodePath": null,
+  "chainTvls": {
+    "ICP": {
+      "tvl": [],
+      "tokensInUsd": [],
+      "tokens": []
+    }
+  },
+  "tvl": [],
+  "tokensInUsd": [],
+  "tokens": [],
+  "currentChainTvls": {},
+  "raises": [],
+  "hacks": [],
+  "mcap": 1623059330.978514
+}

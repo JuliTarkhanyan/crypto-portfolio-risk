@@ -1,0 +1,379 @@
+{
+  "cached_at": "2026-09-23T16:20:06.566284+00:00",
+  "data": {
+    "coin": {
+      "id": "zcash",
+      "name": "Zcash",
+      "symbol": "ZEC"
+    },
+    "market": {
+      "current_price": 1566.43,
+      "volume_latest": null,
+      "annualized_volatility": null,
+      "maximum_drawdown": null,
+      "market_cap": 26487163421.0,
+      "fully_diluted_valuation": 26492079909.0,
+      "market_cap_rank": 9,
+      "price_change_percentage_7d": 25.57449,
+      "price_change_percentage_30d": 87.89232,
+      "price_change_percentage_1y": 2803.20098,
+      "ath": 3191.93,
+      "atl": 16.08,
+      "ath_change_percentage": -50.92528,
+      "atl_change_percentage": 9641.40391,
+      "data_sources": [
+        "Yahoo Finance",
+        "CoinGecko"
+      ]
+    },
+    "project": {
+      "name": "Zcash",
+      "symbol": "ZEC",
+      "description": "Zcash is a privacy-focused cryptocurrency that uses trustless zero-knowledge proofs to enable fully encrypted transactions while maintaining blockchain transparency and security. It was the first cryptocurrency to implement zero-knowledge encryption for private peer-to-peer payments, addressing the fundamental privacy gap in traditional cryptocurrencies that expose transaction details publicly. With a fixed supply of 21 million ZEC and a halving schedule similar to Bitcoin, Zcash allows users to prove transactions are valid without revealing sensitive information like wallet balances, transaction amounts, or participant identities, making it suitable for everyday payments, long-term savings, and cross-border money transfers where financial confidentiality matters. The protocol operates on its own blockchain currently using Proof-of-Work consensus, though it's evolving toward Proof-of-Stake through the planned \"Crosslink\" upgrade to enhance security, scalability, and energy efficiency. Zcash employs trustless zero-knowledge proofs (Halo) within its Orchard shielded pool to verify transactions without revealing sender, receiver, or amount information. Users can choose between transparent public transactions and shielded private transactions through Unified Addresses, which work with both types. The network is faster and cheaper than Bitcoin, with new blocks mined every 75 seconds and transaction fees typically just a fraction of a cent. Privacy adoption has surged in 2025, with over 30% of total ZEC supply now held in fully shielded pools. Zcash was created by a group of scientists in 2013 who initially proposed Zerocoin as a privacy extension to Bitcoin before building a standalone protocol. The ecosystem operates with a self-funded development model where block rewards support independent teams through the Zcash Community Grants Committee and a new Coinholder-Controlled Fund.",
+      "categories": [
+        "Smart Contract Platform",
+        "Privacy Coins",
+        "Layer 1 (L1)",
+        "Zero Knowledge (ZK)",
+        "Proof of Work (PoW)",
+        "Pantera Capital Portfolio",
+        "Made in USA",
+        "Coinbase 50 Index",
+        "Quantum-Resistant",
+        "Privacy"
+      ],
+      "genesis_date": "2016-10-28",
+      "country_origin": "",
+      "hashing_algorithm": "Equihash",
+      "asset_platform_id": null,
+      "platforms": {
+        "": ""
+      },
+      "contract_address": null,
+      "website": "https://z.cash/",
+      "whitepaper": "https://zips.z.cash/protocol/protocol.pdf",
+      "github": "https://github.com/zcash/zcash"
+    },
+    "price_history": {},
+    "price_trends": {
+      "7D": null,
+      "30D": null,
+      "90D": null,
+      "180D": null,
+      "1Y": null
+    },
+    "tokenomics": {
+      "current_price": 1566.43,
+      "market_cap": 26487163421.0,
+      "fully_diluted_valuation": 26492079909.0,
+      "circulating_supply": 16945106.4155448,
+      "total_supply": 16948350.1655448,
+      "max_supply": 21000000.0,
+      "circulating_to_max_ratio": 0.8069098293116571,
+      "defillama_emissions": {},
+      "data_source": "CoinGecko + DefiLlama when available"
+    },
+    "investors": {
+      "status": "Derived from public news search; not a canonical cap table.",
+      "items": [
+        {
+          "title": "Why Is Zcash Rallying Today? Privacy Coins Are Up 90% in a Month and Monero Just Added 13% - 24/7 Wall St.",
+          "source": "24/7 Wall St.",
+          "published": "Mon, 21 Sep 2026 22:08:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdnZTWDlWRVlWWXRIbllGTEdrQUdKdjhzUkhYUmQtZ2ZReFlzSi1RUVN3YlU5YlVxeVV0ODNpLUhkdk1uMUo4ZEdwaXpnaGtEdW5zOEYteTJPWV9GTzdJd3JHQUwtYzJ0dlE2NDcwMXUtQnY1OEtsZkpuYXNmWldQdHZDS0FQc0ZkU3pwRDZMcGNHa3hqckViRnoydXhldGRPYklWV1l3ZFNpb190RlVYZnQxeVhLSVpQWjNibjJuUHVVMl9VSUZObFdqQTBqbXhEMHJtM0x0WkY4SWlnelFR?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash gains 20% as Paradigm founder reveals firm made ZEC investment - TradingView",
+          "source": "TradingView",
+          "published": "Thu, 17 Sep 2026 10:35:29 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONllNVkZzNGxZRjJLQXpyQndoR0FtM1FwREpHcUt4WXpvdHJvUF95Y0dXZUtDTzJzNUZiU1ZJcXctaTNFWUl1eFZnWnJNby1PWVlEMjdzZnB5alg0a3Q4NWRCUzVubkRHZ2hEUTdWUy04R0pCYlhHYl9qa25EVEZ5RVJKbFNmQzl2cmhPOHRxWmtwWnVMcC10Z3pXZFVtVGJTYmdOa2VudFhMT3RNdTY3ajRRU0pLWjFRbmZIRDZzRjBrTnBLVHJraE5jVQ?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Paradigm Labels Zcash a \"Private Complement to Bitcoin.\" What's the Implications for Both Coins - 24/7 Wall St.",
+          "source": "24/7 Wall St.",
+          "published": "Sun, 20 Sep 2026 02:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVXMtWVRTNnFZR1pscTRQenJpcFQwYmNjbGpxczJPeGVEclk3LWJqSkVwYk55UWpHWmg5Vjl5N2lTM3A3Q29ub3J3Yl9ackxkdEtHQXcyWERWZFItUXpIc0thdUJET1dNZEF0b214QkxiMGxZYXhReTlyVEh1NFl6TXlMR3ZqXzRURzdwRFNZQ3ppODhKM1dZR0ZBWXgtWTNOMExaa2VDODY4dklFSkJMbDRyMlZCSFFDUEh1cFkzTWVWbmVrQ0pfQmkwaTRSLTJ4emtpR0U0ZC0zV0puczNSUlNVQ3A?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Crypto Markets, Privacy, And Payments - panteracapital.com",
+          "source": "panteracapital.com",
+          "published": "Wed, 12 Nov 2025 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNEhONWVpaXdzNGREMTcwVFhjcmxCU0pXRFQ4dlpfcGtDWVFpZVhfZDRfODJ1UWwxcUNxcjhFWHF1RjVTYXdHbzNQQkRXT2duYkVCT25CM204Vm5SZ1ByYzZYNVNzalM5akRpbUNRYXQwM0FlWEt3RGdMX09BNVdBVTFYMmVRcFMy?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash Dev Lab Raises $25M From Paradigm and a16z - CoinMarketCap",
+          "source": "CoinMarketCap",
+          "published": "Thu, 10 Sep 2026 21:53:52 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWZsTXZybC1vbXFodmxNY3lZel9sNzJJenVBc2E4SGZqNWVGTVh3TzVqRFJKS1JOamJZQllrbnlIbmFsam5uRkk5M3h5VXlzTHZ1QjBNRXBnVFpBcXI1X1FnUUl5NkFxdEV4RnM5ZFFDX0VpQVdLX01kM2NNRUZuVEpJTFZvT2M1dXBYNGlJalV4STFWcFRyZE1QNA?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "ZEC Surges 10% After Paradigm Co-founder Endorsement: Will It Hit $1,800? - TradingView",
+          "source": "TradingView",
+          "published": "Fri, 18 Sep 2026 00:06:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRDhhZlRfX2JONEMzU25nT3Q2N1N2cm5wZWVXZm10dVlsbHR5ZGxNZWVuejFnbHQ5X1c0TExzejB0cUk4bnZoM2RpM2pWRVFjOFgxdUF2MkJqcDJ0RzFTcjNBcjRHcmRLOXViNVozWks0QnYwMnNySnE4MGtaYi1xZHRrWVVfRUtMWkZhQkZaMjVSLUM4dnkwMlNXRU5SZE1pbGpPc0UwWHhqaHJGcjUxU0FER2UyT1prVzNhTlk3cnRMSzdqNHNJaQ?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash Dev Team's New Company Raises $25M in Seed Round - The Defiant",
+          "source": "The Defiant",
+          "published": "Mon, 09 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNS2JOaHdwRGxCM19EeTdONXJlb2JUZDdfU3FvWFBxYlVYUFNIclBVd2JnX19RRGRMeElkbF9MV1BWOUdFRU1wWEVLSlI3eE0zQlQyMGowQVpIdDNpa0NRdV9MdEtQd29XM3V0NXVKSldfd2FXWU5NT1hMQmdtTldVZWJCWmZBa25sZkVWdmgwM05kZW9UUS1pMA?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash Open Development Lab raises $25 million from leading crypto investors Paradigm, a16z and others - The Block",
+          "source": "The Block",
+          "published": "Mon, 09 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZGk2bTFMRDVEeGdidk1UVE5FZGxwUF93TFhnTUlyejd5UVdZX01pZjEtS1NGYXFEX0twYXhva2RuQnF3cnhrZEJrTjhGejZoRzFjQWR3TWFYUExTdDQ4OUFKcWIySC1aZm1ZdnJfYlRXbk14RE9zenRlQmpLSTR6Z3hLdWc1R2N2d2FxWk5wQ2tvWjhaUWxFSm5jdVRaalNEZFAyalhYU1FiZDJjWXhwUFdvWXRWcXFXX3RHM00xNGxBcmozcFJFMm1obWZEdkJ3?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        }
+      ]
+    },
+    "funding": {
+      "status": "Derived from public news search; verify against official disclosures.",
+      "items": [
+        {
+          "title": "Why Is Zcash Rallying Today? Privacy Coins Are Up 90% in a Month and Monero Just Added 13% - 24/7 Wall St.",
+          "source": "24/7 Wall St.",
+          "published": "Mon, 21 Sep 2026 22:08:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdnZTWDlWRVlWWXRIbllGTEdrQUdKdjhzUkhYUmQtZ2ZReFlzSi1RUVN3YlU5YlVxeVV0ODNpLUhkdk1uMUo4ZEdwaXpnaGtEdW5zOEYteTJPWV9GTzdJd3JHQUwtYzJ0dlE2NDcwMXUtQnY1OEtsZkpuYXNmWldQdHZDS0FQc0ZkU3pwRDZMcGNHa3hqckViRnoydXhldGRPYklWV1l3ZFNpb190RlVYZnQxeVhLSVpQWjNibjJuUHVVMl9VSUZObFdqQTBqbXhEMHJtM0x0WkY4SWlnelFR?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash gains 20% as Paradigm founder reveals firm made ZEC investment - TradingView",
+          "source": "TradingView",
+          "published": "Thu, 17 Sep 2026 10:35:29 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONllNVkZzNGxZRjJLQXpyQndoR0FtM1FwREpHcUt4WXpvdHJvUF95Y0dXZUtDTzJzNUZiU1ZJcXctaTNFWUl1eFZnWnJNby1PWVlEMjdzZnB5alg0a3Q4NWRCUzVubkRHZ2hEUTdWUy04R0pCYlhHYl9qa25EVEZ5RVJKbFNmQzl2cmhPOHRxWmtwWnVMcC10Z3pXZFVtVGJTYmdOa2VudFhMT3RNdTY3ajRRU0pLWjFRbmZIRDZzRjBrTnBLVHJraE5jVQ?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Paradigm Labels Zcash a \"Private Complement to Bitcoin.\" What's the Implications for Both Coins - 24/7 Wall St.",
+          "source": "24/7 Wall St.",
+          "published": "Sun, 20 Sep 2026 02:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVXMtWVRTNnFZR1pscTRQenJpcFQwYmNjbGpxczJPeGVEclk3LWJqSkVwYk55UWpHWmg5Vjl5N2lTM3A3Q29ub3J3Yl9ackxkdEtHQXcyWERWZFItUXpIc0thdUJET1dNZEF0b214QkxiMGxZYXhReTlyVEh1NFl6TXlMR3ZqXzRURzdwRFNZQ3ppODhKM1dZR0ZBWXgtWTNOMExaa2VDODY4dklFSkJMbDRyMlZCSFFDUEh1cFkzTWVWbmVrQ0pfQmkwaTRSLTJ4emtpR0U0ZC0zV0puczNSUlNVQ3A?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Crypto Markets, Privacy, And Payments - panteracapital.com",
+          "source": "panteracapital.com",
+          "published": "Wed, 12 Nov 2025 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNEhONWVpaXdzNGREMTcwVFhjcmxCU0pXRFQ4dlpfcGtDWVFpZVhfZDRfODJ1UWwxcUNxcjhFWHF1RjVTYXdHbzNQQkRXT2duYkVCT25CM204Vm5SZ1ByYzZYNVNzalM5akRpbUNRYXQwM0FlWEt3RGdMX09BNVdBVTFYMmVRcFMy?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash Dev Lab Raises $25M From Paradigm and a16z - CoinMarketCap",
+          "source": "CoinMarketCap",
+          "published": "Thu, 10 Sep 2026 21:53:52 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOaWZsTXZybC1vbXFodmxNY3lZel9sNzJJenVBc2E4SGZqNWVGTVh3TzVqRFJKS1JOamJZQllrbnlIbmFsam5uRkk5M3h5VXlzTHZ1QjBNRXBnVFpBcXI1X1FnUUl5NkFxdEV4RnM5ZFFDX0VpQVdLX01kM2NNRUZuVEpJTFZvT2M1dXBYNGlJalV4STFWcFRyZE1QNA?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "ZEC Surges 10% After Paradigm Co-founder Endorsement: Will It Hit $1,800? - TradingView",
+          "source": "TradingView",
+          "published": "Fri, 18 Sep 2026 00:06:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRDhhZlRfX2JONEMzU25nT3Q2N1N2cm5wZWVXZm10dVlsbHR5ZGxNZWVuejFnbHQ5X1c0TExzejB0cUk4bnZoM2RpM2pWRVFjOFgxdUF2MkJqcDJ0RzFTcjNBcjRHcmRLOXViNVozWks0QnYwMnNySnE4MGtaYi1xZHRrWVVfRUtMWkZhQkZaMjVSLUM4dnkwMlNXRU5SZE1pbGpPc0UwWHhqaHJGcjUxU0FER2UyT1prVzNhTlk3cnRMSzdqNHNJaQ?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash Dev Team's New Company Raises $25M in Seed Round - The Defiant",
+          "source": "The Defiant",
+          "published": "Mon, 09 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNS2JOaHdwRGxCM19EeTdONXJlb2JUZDdfU3FvWFBxYlVYUFNIclBVd2JnX19RRGRMeElkbF9MV1BWOUdFRU1wWEVLSlI3eE0zQlQyMGowQVpIdDNpa0NRdV9MdEtQd29XM3V0NXVKSldfd2FXWU5NT1hMQmdtTldVZWJCWmZBa25sZkVWdmgwM05kZW9UUS1pMA?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        },
+        {
+          "title": "Zcash Open Development Lab raises $25 million from leading crypto investors Paradigm, a16z and others - The Block",
+          "source": "The Block",
+          "published": "Mon, 09 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZGk2bTFMRDVEeGdidk1UVE5FZGxwUF93TFhnTUlyejd5UVdZX01pZjEtS1NGYXFEX0twYXhva2RuQnF3cnhrZEJrTjhGejZoRzFjQWR3TWFYUExTdDQ4OUFKcWIySC1aZm1ZdnJfYlRXbk14RE9zenRlQmpLSTR6Z3hLdWc1R2N2d2FxWk5wQ2tvWjhaUWxFSm5jdVRaalNEZFAyalhYU1FiZDJjWXhwUFdvWXRWcXFXX3RHM00xNGxBcmozcFJFMm1obWZEdkJ3?oc=5",
+          "query": "\"zcash\" crypto funding investors venture"
+        }
+      ]
+    },
+    "unlocks": {
+      "defillama_emissions": {},
+      "news": [
+        {
+          "title": "NEAR Doubled in a Week, and Part of the Reason Is a Rally in a Different Coin - CryptoRank",
+          "source": "CryptoRank",
+          "published": "Wed, 23 Sep 2026 12:20:42 GMT",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeF9aN0xTTUNYZ214aVVSTTlaWVVsb3FMQkhRa3pjajQ3T3Viei00ZnZZTUE3ZXdmQ2taQlB1aHdUdHVLZ2c4U2o0Z0hzbEhidlZraUozSldJUkF3R1FpUURlV2F6VmlGM0t5alVLMGptZG1iMFhLV1pzVTdaWlVaeDZHYVRhZXk3VDdUSkhzZC1GbFh1WXQwZ052UkFfMVpoQ3dQbW1tNXI0Q2lZVXFfU0hHaUQ?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        },
+        {
+          "title": "Arbitrum Warning: ARB Token Unlock Could Trigger Another Sell-Off — Is a Crash Coming? - bitcoinfoundation.org",
+          "source": "bitcoinfoundation.org",
+          "published": "Wed, 12 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRzF2U3B1cjlqYmV5WF9wZWNaSVdkZEY1dTM3czZlZ2ZiY1NSVmZWUVZqZGtxQVR6c1M5ZzktR0MzbFRWalpxZFVFOU1naFBhS3kxWl9NRG5LU0lDeVRaODBINmRydW03WGpDN3J1TDF4ajhFa2huWXJHWFFkMk1zdFVJQWRWTHpKX21MVm9ST3hCRUtRSmlwbG9VNHJxNW5IRVBFM3JWZ0U2aVBxSmd5d3A3a3FzY3BtQ2pZRWs0cDRaUGhtUWc?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        },
+        {
+          "title": "10 Cryptocurrencies to Watch in 2026: Market Leaders, Use Cases and Risks - StealthEX",
+          "source": "StealthEX",
+          "published": "Wed, 16 Sep 2026 16:57:36 GMT",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1aRTJuYUxPdzFaYWtzcVVGYjRkTFRTUmE5Nm1hR04wUlZ6NUthVmJWak41Y0ZZWHFMWHNXMzZwTEs3MnZnN2R6eExXbmg2NU1hU050TmpjQXA4NjlsQUVneDE4a19vS19FNTc3b3Z3?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        },
+        {
+          "title": "APT Drops 3.3% as 12 Sep Token Unlock Triggers Selling - CoinMarketCap",
+          "source": "CoinMarketCap",
+          "published": "Sun, 13 Sep 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DNVBva3dQXzZCMlAza0F2b1BzTUxzLU5vSmRaV0xkcl9qTmxTUkltcVFMRlN0LU5ocWNjZ3UzNHZGcDVCbS1yT2lIWTNUSWh5WlVqazliNVJSeWtMclozMEVZTlN1VTg1Qm1KY09BVDg?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        },
+        {
+          "title": "Ethena Just Paid Its Early Investors to Exit as ENA Nears 100% Rally - BeInCrypto",
+          "source": "BeInCrypto",
+          "published": "Thu, 27 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5VdzBKcGVPbGN5c1RNRTEyVFNyRVdGbS1zbFJGc2hXV0tZd2tjVUVJQ0JWOWhRZDJNR2h2NWJmOTVJSlp4Zzd0bm1Wb2RnNnBCVjVXUG1jVlhTT2pTeWpoR0hn?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        },
+        {
+          "title": "Tokenomics: Unveiling the Heartbeat of Crypto’s Digital Economy - Phemex",
+          "source": "Phemex",
+          "published": "Thu, 19 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80UGtEM3hxMlJmODF3T3hFZTVlTGc1Q3QyaVhBdksxZDBGdTNOYlpVLUlwZ05vdzFQMG1MeDNxQy1JZUFia0RKMFlUREpXblUxVHZqSHFwUE0?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        },
+        {
+          "title": "Pump.fun Survives Its Biggest Token Unlock and a Viral Raccoon Coin Takes Over - Startup Fortune",
+          "source": "Startup Fortune",
+          "published": "Mon, 20 Jul 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSnVmZ3FUemFYYnkzOVliQW96Q05SblFHeTVBb0NtTjBhWTFycmU0RlFvcWtnb29za1BXRFVIdHMwVUQyXzA1TktRcWhsajVOZG1iZEFlMUtqWWdqUDNXR21aUGx4cDlwaElCNnVQQWxCQ041cWtCZ1NseHJNQmU1MXYxVVJyUTlmNW90akhkQkFVblRnMjAyOTVyTlh6WF9na25KTVZsSHQ?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        },
+        {
+          "title": "What Is RE Crypto? Why the New Token Is Taking the Market by Storm in June 2026 - bitcoinfoundation.org",
+          "source": "bitcoinfoundation.org",
+          "published": "Fri, 19 Jun 2026 13:56:47 GMT",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVEk3bWlBNnl6OTJEMlNma3N3YzUyc29UYUJQWXMxTjd3THctNTlLdG5PUzg1aHlzaFkyd3FDRHRkS3BKOGg2MVJkeGdqcEFDVmJOb3BRSlM5bG5oaU5NZ0xLUjFzM0dnbDNqbG1qR1dnUWtydU9YX0w0YXRwYlljdk81SnRFQi04YzVBd3VJTzN2VkdWdzR2M2R5bFhZLUFtbnhzVVJtXzZSRWNGbjg0?oc=5",
+          "query": "\"zcash\" token unlock vesting investors"
+        }
+      ],
+      "note": "No investor/team unlock figure is invented when a public source does not provide one."
+    },
+    "history": {
+      "genesis_date": "2016-10-28",
+      "items": [
+        {
+          "title": "A Zcash ETF Launched in August Now Accounts for a Third of All Crypto ETF Trading - 24/7 Wall St.",
+          "source": "24/7 Wall St.",
+          "published": "Sat, 19 Sep 2026 23:18:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNTA3RVRKbEppV09Fd0tsTXl3VHlySzdGcGZxTmM5SXlJWlBZVlZVUkVnMGVsV1Izc2ZNZWR6T05aajhUelUxc2RnMFBOWDE5TGhnTUlCTzkzbTBZcFpmZHZfUFFIdzZNNHh5d2ZYWTd2eGVKZmpWWmt0LXY4bTNlOGpDWGJYdVVudkkwM0ViOEpVY3h6SVhHZnJ4TGttZnlHRmp6S2dSRy02Vy1TOE9NUGZTc2NPcW9HYkJiQVQxaUY3TjNnUUFlQVRJck52WkI4OHJSSGxPMA?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        },
+        {
+          "title": "Zcash Developers Target Nov. 5 NU7 Mainnet Upgrade With 25-Second Blocks: 23 outlets compared - NewsCord",
+          "source": "NewsCord",
+          "published": "Wed, 16 Sep 2026 10:39:01 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRnBadFkwRmlxQkNMSmt0aERjcktuOXI4eGlPRXBxUG9zemxlZGJ5QmhjclhySHFCa3lQUVFJUGtWMks0RVpaOFY4VHZKRW1pOFkyaDdWSy1jbnlCTHdQWXJmREo0dXVOaHl1b2NrVUItSVVIRzlxeWdsbThscl9ZSHVSdExTYTNKR1NHTGtkak1NWGs3MTZGZUtBWEJUdzZSRXdEelAycWYwM1JNam9xYzNfUS1nNXZsN04zNV95ZEx3YUM1N2VmcmJVX2lJZ2xmVC1PdDIzanREV015SEI1elh5X1hsMzVhQ2c?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        },
+        {
+          "title": "Dash Surged 165% Before Privacy Coin Rally Pulled It Back to Earth - Startup Fortune",
+          "source": "Startup Fortune",
+          "published": "Fri, 18 Sep 2026 06:03:37 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSzBvRFMyZGJJbHI2VVdiaFVqcGxqQnVBNjRFRzM3MUtNUTBuTk50VWFGNkJ2SVV2YkVpZzdOd0FEajh6REM4ZlloR0E5R1pGUnlzY0Rtdk1wZG9LUUR2QmxISm5nY214Sk9rQUllZE5IOG5iSGk3Ukl1U3JWNC01S255bkZrYUh3T1dCVUpPakVpNE56WlYzVA?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        },
+        {
+          "title": "How Zcash Became The Test Case For Privacy Crypto’s 2026 Comeback - Yellow.com",
+          "source": "Yellow.com",
+          "published": "Sat, 12 Sep 2026 20:39:37 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVVhSNzVFRWJ2T253bDZzRGlCQjNUOWNxU1lCV2NTODJ6YnZqaDNpMWx3V0JaRVk3MVpjNW0xelh5RnF0aTR0azhGLUVtYmNsSmh6MWREZV9aTzVOMkJWTGF2eFZPMmJ2OEZPWGM2UDBTZWZJNTdiMFlxWWJ1VnVIUEF3?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        },
+        {
+          "title": "Zcash Activates Ironwood Upgrade — $1.7B Orchard Pool Closed, Coins Pass Through ‘Turnstile’ - bitcoinfoundation.org",
+          "source": "bitcoinfoundation.org",
+          "published": "Wed, 29 Jul 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaHlka0QwUUJaTHY1X3VkNXMzMDJHZmFrTjA5YXFuZ0pqbG5kbnlNMHE2eXRJSTZHdUdlb3pnaDBUR0t6eVFvXzd0TlkxUEJBTnFuV2JMak8wRkxJYXVzNkxsNzJrYlNDNF9TZk1DeERXbURZNy1QVDZIc3JFSnhjQkhn?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        },
+        {
+          "title": "Circle Launches Arc Mainnet With USDC Gas, BlackRock, DTCC, Visa Validators: 12 outlets compared - NewsCord",
+          "source": "NewsCord",
+          "published": "Wed, 16 Sep 2026 15:49:52 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZUx1TU8xWC15dWhLckN1bUVsbzVxTVB6dzA5MDNwdW9icVp2X2w3Vk5NUHBmcHZ0MFYwMVJCUlR1WVRJelRSQnZHeS0tejhDYllxUDhWd3JXNlNrc1YzVzlteGF1Y1FDeWYxd29BR2hFYUtLUllBMkdfcTczMHA3WmJEWVQ1dUZ2c185N1p4cHFtVjVrbGdTVUsxSWxCeEw5MnhQRndsRlU2UjNnaXVMb0h3dVhZVWxJUVJlZFFaa3packpYSHZ6TFhLVXNMMWtiSGNMZEdFcWtZa1ZtdnBZ?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        },
+        {
+          "title": "Privacy Coins Reclaim Spotlight Amid Global Pushback Against Financial Surveillance - Cryptonews.net",
+          "source": "Cryptonews.net",
+          "published": "Fri, 08 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lRnkyNTJjRElWZmxrWUgzVnBncHlRZmI0SzNHcV94RTRJWG9KV3NaN2dzOUx1QmZQYlg1WGZ5OW83bGF3ZXlvck9UMVJBMUtzM29UXzd5VDFFZw?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        },
+        {
+          "title": "From Aztec to Zcash: The year 'pragmatic privacy' took root - The Block",
+          "source": "The Block",
+          "published": "Fri, 26 Dec 2025 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVS01dW4wQmY4OGc2aFBUV2VnWVBvUzI1OThUWHBaVVV0bGhNMm9LdWZOdUYyYUpEa0hpMDlFblZvXzh5WlFCbWlBajV5VzBHYjB2UzNZZFJJUWgwXzZmM25hX3NISmRYekJ0elNOMDVqQmlKaWtkQUhiTDBnM056TTAyMjdMNHNVWjlsZ2szSlFBVl9ZYmVGc3lKQQ?oc=5",
+          "query": "\"zcash\" crypto launch mainnet history"
+        }
+      ]
+    },
+    "ecosystem": {
+      "defillama": {},
+      "tvl": null,
+      "chains": [],
+      "category": null,
+      "url": null,
+      "description": null
+    },
+    "github": {
+      "repository": "https://github.com/zcash/zcash",
+      "repository_name": "zcash/zcash",
+      "description": "Zcash - Internet Money",
+      "stars": 5490,
+      "forks": 2226,
+      "open_issues": 1132,
+      "watchers": 5490,
+      "default_branch": "master",
+      "created_at": "2014-11-22T03:13:10Z",
+      "updated_at": "2026-09-20T02:47:05Z",
+      "language": "C++",
+      "license": "NOASSERTION",
+      "topics": []
+    },
+    "events": {
+      "news": [
+        {
+          "title": "Zcash plummets 38% as Shielded Labs reveals a major bug that went undetected for four years - CoinDesk",
+          "source": "CoinDesk",
+          "published": "Fri, 05 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUHlfaGRmZUlnWjloVlNuc3VsdGRrOWRrQ1ZLRldidUtxWk5TdmlIMjZtQ2M1d1B3c2dPdlBEMFY3NFkwVzFLX3ViQTZtLWN4b0VnNzkwUlRXUkF4TG5mZDRjMFB0cExzUm4zWEJjR3loOW8wdGRHampBelAzVkhjaXZOVHBhcTYyTjVLeFUtWmpTc3RVczNfY3ZQSmtiYlJxdnNIekNzdEZKc2tzTjRXTE50NWlSV3NoVDFaT2tfb2g3b1djZm82RWFn?oc=5",
+          "query": "\"zcash\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "Zcash Foundation patches consensus-critical bugs after record $651 million hack month - Cryptopolitan",
+          "source": "Cryptopolitan",
+          "published": "Sat, 02 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBjTkRtbi02ZE9Cd0VYLTJFcDdCVXNRY0ktaENaSUJLalpObWxZaWZyRjBxNlZUd0tWal9pUWZyanFaMFJoYWZySnU5ZkZ4cU9sSklGQ2NONTNCb1JzaGktYjJjR2piY1l2LTRzMUdFT1NPUkxoNGxSaw?oc=5",
+          "query": "\"zcash\" crypto partnership upgrade launch hack exploit regulation"
+        }
+      ],
+      "note": "Events are collected from public news search results and should be verified before being treated as definitive project history."
+    },
+    "risks": [
+      "No automatic high-priority risk flag was derived from the collected public metrics."
+    ],
+    "community": {
+      "twitter_followers": null,
+      "reddit_subscribers": null,
+      "telegram_channel_user_count": null
+    },
+    "developer": {},
+    "sources": {
+      "coingecko": "https://www.coingecko.com/en/coins/zcash",
+      "yahoo_finance": null,
+      "defillama": null,
+      "github": "https://github.com/zcash/zcash"
+    }
+  }
+}

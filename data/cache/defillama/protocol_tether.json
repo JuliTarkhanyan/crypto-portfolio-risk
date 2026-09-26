@@ -1,0 +1,75 @@
+{
+  "id": "5009",
+  "name": "Tether",
+  "address": null,
+  "symbol": "-",
+  "url": "https://tether.to/en/",
+  "description": "Tether is a company that issues the USDT stablecoin, facilitating stable value transfers across blockchain networks",
+  "chain": "Off Chain",
+  "logo": "https://icons.llamao.fi/icons/protocols/tether",
+  "audits": "0",
+  "gecko_id": null,
+  "cmcId": null,
+  "category": "Stablecoin Issuer",
+  "chains": [
+    "Off Chain"
+  ],
+  "module": "dummy.js",
+  "twitter": "Tether_to",
+  "stablecoins": [
+    "tether"
+  ],
+  "dimensions": {
+    "fees": "tether"
+  },
+  "tvlCodePath": null,
+  "chainTvls": {
+    "Off Chain": {
+      "tvl": [],
+      "tokensInUsd": [],
+      "tokens": []
+    }
+  },
+  "tvl": [],
+  "tokensInUsd": [],
+  "tokens": [],
+  "currentChainTvls": {},
+  "raises": [
+    {
+      "date": 1700697600,
+      "name": "Tether",
+      "round": "Equity",
+      "amount": 600,
+      "chains": [],
+      "sector": "Tether is a company that issues the USDT stablecoin, facilitating stable value transfers across blockchain networks",
+      "category": "Stablecoin",
+      "categoryGroup": null,
+      "source": "",
+      "leadInvestors": [
+        "Cantor Fitzgerald"
+      ],
+      "otherInvestors": [],
+      "valuation": null,
+      "defillamaId": "5009"
+    }
+  ],
+  "hacks": [
+    {
+      "date": 1511049600,
+      "name": "Tether",
+      "classification": "Key Compromise",
+      "technique": "Private Key Compromised",
+      "amount": 30950010,
+      "chain": [
+        "Bitcoin"
+      ],
+      "bridgeHack": false,
+      "targetType": "Token",
+      "source": "",
+      "returnedFunds": null,
+      "defillamaId": "5009",
+      "language": null
+    }
+  ],
+  "mcap": null
+}

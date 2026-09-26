@@ -1,0 +1,461 @@
+{
+  "cached_at": "2026-09-23T15:44:17.366134+00:00",
+  "data": {
+    "coin": {
+      "id": "solana",
+      "name": "Solana",
+      "symbol": "SOL"
+    },
+    "market": {
+      "current_price": 114.52,
+      "volume_latest": null,
+      "annualized_volatility": null,
+      "maximum_drawdown": null,
+      "market_cap": 67385807716.0,
+      "fully_diluted_valuation": 72779527164.0,
+      "market_cap_rank": 7,
+      "price_change_percentage_7d": 18.13366,
+      "price_change_percentage_30d": 19.22973,
+      "price_change_percentage_1y": -47.42722,
+      "ath": 293.31,
+      "atl": 0.500801,
+      "ath_change_percentage": -60.95579,
+      "atl_change_percentage": 22767.6218,
+      "data_sources": [
+        "Yahoo Finance",
+        "CoinGecko"
+      ]
+    },
+    "project": {
+      "name": "Solana",
+      "symbol": "SOL",
+      "description": "Solana is a high-performance Layer 1 blockchain designed for mass adoption by providing a fast, secure, and low-cost environment for decentralized applications. It distinguishes itself by scaling globally without the use of complex sharding or multiple layers, instead maintaining a single, unified ledger to avoid liquidity fragmentation. This architecture allows it to process thousands of transactions per second with sub-second finality, often at a cost of less than a penny per transaction. The network operates on a unique hybrid model that combines Proof of Stake with an innovation called Proof of History, which functions as a decentralized clock to timestamp transactions. This system reduces the need for constant node communication, allowing the Sealevel engine to run non-conflicting smart contracts in parallel across multiple CPU cores. Further efficiency is gained through the Gulf Stream protocol, which reduces confirmation times by forwarding transactions to validators before the current block is finished. Founded in 2017 by Anatoly Yakovenko, Solana is now supported by the Switzerland-based Solana Foundation and significant institutional investors like Andreessen Horowitz and Polychain Capital. The platform’s native token, SOL, serves as the primary currency for paying transaction fees, participating in network governance, and securing the system through staking. Solana has also seen significant institutional adoption ranging from spot Solana ETFs to major partnerships including Visa's 2025 launch of USDC settlement on the network and the tokenization of public equity by firms like Galaxy Digital.",
+      "categories": [
+        "Smart Contract Platform",
+        "Solana Ecosystem",
+        "Layer 1 (L1)",
+        "FTX Holdings",
+        "Multicoin Capital Portfolio",
+        "Proof of Stake (PoS)",
+        "Alameda Research Portfolio",
+        "Andreessen Horowitz (a16z) Portfolio",
+        "GMCI Layer 1 Index",
+        "GMCI 30 Index",
+        "Delphi Ventures Portfolio",
+        "GMCI Index",
+        "Polychain Capital Portfolio",
+        "Made in USA",
+        "Coinbase 50 Index",
+        "CoinList Launchpad"
+      ],
+      "genesis_date": null,
+      "country_origin": "",
+      "hashing_algorithm": null,
+      "asset_platform_id": null,
+      "platforms": {
+        "": ""
+      },
+      "contract_address": null,
+      "website": "https://solana.com/",
+      "whitepaper": "https://solana.com/solana-whitepaper.pdf",
+      "github": "https://github.com/solana-labs/solana"
+    },
+    "price_history": {},
+    "price_trends": {
+      "7D": null,
+      "30D": null,
+      "90D": null,
+      "180D": null,
+      "1Y": null
+    },
+    "tokenomics": {
+      "current_price": 114.52,
+      "market_cap": 67385807716.0,
+      "fully_diluted_valuation": 72779527164.0,
+      "circulating_supply": 587578090.5718395,
+      "total_supply": 634609203.2780416,
+      "max_supply": null,
+      "circulating_to_max_ratio": null,
+      "defillama_emissions": {},
+      "data_source": "CoinGecko + DefiLlama when available"
+    },
+    "investors": {
+      "status": "Derived from public news search; not a canonical cap table.",
+      "items": [
+        {
+          "title": "Fund V Closing October 31st - panteracapital.com",
+          "source": "panteracapital.com",
+          "published": "Mon, 06 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HeGRXcjhFcURGWnhCS2VUOTgxRFJ5cnA3cjR1Qnpnalg0MHJRT2hEQmpaVTh6SHZpeG0wRFZfbHVPTy1YbU8wbDFCSkFrMmFzQ0pLdW85WV9ISy1EeFQ1QWJSakRGX2tsT3FYRGJUeGNXOGllYUFXMmljT2lodw?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "ParaFi Capital makes $35M investment in Solana-based Jupiter - TradingView",
+          "source": "TradingView",
+          "published": "Mon, 02 Feb 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVGtHUW9pelA4c296N1UxT2dJUmxoSkxJeXgyUnhrR2JxT0ZUWF9jeG9WM3I4dUFReTNDcmc5V29hRVVqd2NDcWM3MzBTSGNSTXVRaHBJcnUyTU5XVkZlWG1hQUFfN1hDZUVyRUF2cHdNZGZJdmNFN0hZT0hlekRjMDY2R25qc2pWcTdJZGtrZUoweUxiX2gzam82d3lZdEU1MW1NMHhJWEozell3ZGRETnFlR1YxZXJ4MTRRT1l0ZkQ?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Solana Prediction Market TBD Secures Pivotal $3M Seed Funding from Major Crypto VCs - CryptoRank",
+          "source": "CryptoRank",
+          "published": "Wed, 25 Feb 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0NmgxTmZ2ZlNsaVV6ank4d3RzX3R1X1dYb2cxdjY5d0UwYlNMMUE0ZHVjMTZta2wxbTRabnlPd3RkTG1WUzRhQ2ZpcUNQM2pCc250TnhpV1RGQUlJNkY5RW5QQ1VTaWtFeHByTUd2YldGdGhNTHZCaEJxdGtFbG8?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Pixie Chess raises $5.2 million - BlockchainGamerBiz",
+          "source": "BlockchainGamerBiz",
+          "published": "Fri, 10 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFpmZWFSTHRQVVdqdXA2aHdBbUw4RDhLdjA5MmVmZi0wNWE5ZzI1QVkzTjhXMjA2aDQycmZObmN6QXo3QXVZR1VXVnFWdmd2NzJhSGlfU2ptSHVSN1dET1hEbnF2TVEtcU81MkxGWnFaX0hqSl9WR2dLQmVYRWhzRXkySjhsLW5SaXlGOVI0RkRYT0s4aTRzckdFMNIBoAFBVV95cUxPdFVpemtQSlo5YUJod1JTY3czYjVKbHRzazJjdjlmbUdFSmN2Yi0xMzBGY1V1LVRSQmJlTzZjRy01SlNIQ3Jfem5EOGU3WEFSVTQyZjR0N3JLMWNhMWlWdkRpcEk1Sm41RUM1V3QtS2xFWko3LXloNDlLbVJrY0RDVmRvWDJEZHNQVFRicFhxZFJpUXNNQlZjLXJFbWhkdG5Z?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "A16z Crypto invests $50 million in Solana's Jito via private token sale - The Block",
+          "source": "The Block",
+          "published": "Thu, 16 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcVcxRFlLRFMzQ0xiUUlDZjVmdXctUjJtYlJ1X19ENk5tdHhrTC02ZHlHaHZOM1N1YlN5RlNGSW42ZER2T1dxV0h6eURsMUE3YXpLUE5KS2NnR0Q4YjBRY3ZqZVU1blpxdV9NYUpPMmlSdTRONC1KYXlzSnlVSHFSZllteTJMb05laERRZmJ3WnE1eTBJYUw4NVlzemRPYktadTBfdWlDUGN2T3lvT3RHQmNHbw?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Digital Asset Treasuries vs Crypto Venture Funding in 2025 - insights4vc | Substack",
+          "source": "insights4vc | Substack",
+          "published": "Thu, 21 Aug 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5scVk1WEJFdjFOaEJMeUw3LWNrUzVuSTZER3BQWXBLLS1BQk8td19qRVRPMm01aVRqZHpwNW5WZVFmQUxHa0NseURFRlY1U1dEN1UzdHNyNDBxSGwxWDZSN3NseUZfV1AzNkp2bmNwMXYyYVFMc2xjNw?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Multicoin’s Kyle Samani: SEC’s ‘Project Crypto’ speech sparked Solana treasury firm launch - thestreet.com",
+          "source": "thestreet.com",
+          "published": "Tue, 07 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNemhsX0NxMmhxU25BVW9EZ3dCLTVZZVo3UXJsOUF0anZ1VlppSlJCVjZkX3VGVkdqNkxYZENZNUFKSkdNMXVFQjlVU2RmQVFFOXRwT1ZWQU5BUWlsT3NWVjNRWEVuSVhXRnJvb0pvU2NkaUlKNVBSTXdtTTBQUF9kU3RKRXRwZFl5aUJoVDJ5UFlVSGNR?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Venture Capital Funding for Crypto Companies Is Surging (Published 2021) - The New York Times",
+          "source": "The New York Times",
+          "published": "Wed, 01 Dec 2021 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLTVHMEM1MVhhWFhPUHlmckY5VHFaOWd2Q3JSUzd2eXpNLVBQUmpUbnhiUHZnNlJVbTg0ZGQ3U0ZZbnlIdG5uQUF2LS03bkx2SWczRmNFbGZ2X0NiR201SDBiTVFWSGxqbGUtTlhyajlPcDRpUTNTV0ZiNGtyRzJiaVNLZ05BTmc?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        }
+      ]
+    },
+    "funding": {
+      "status": "Derived from public news search; verify against official disclosures.",
+      "items": [
+        {
+          "title": "Fund V Closing October 31st - panteracapital.com",
+          "source": "panteracapital.com",
+          "published": "Mon, 06 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HeGRXcjhFcURGWnhCS2VUOTgxRFJ5cnA3cjR1Qnpnalg0MHJRT2hEQmpaVTh6SHZpeG0wRFZfbHVPTy1YbU8wbDFCSkFrMmFzQ0pLdW85WV9ISy1EeFQ1QWJSakRGX2tsT3FYRGJUeGNXOGllYUFXMmljT2lodw?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "ParaFi Capital makes $35M investment in Solana-based Jupiter - TradingView",
+          "source": "TradingView",
+          "published": "Mon, 02 Feb 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVGtHUW9pelA4c296N1UxT2dJUmxoSkxJeXgyUnhrR2JxT0ZUWF9jeG9WM3I4dUFReTNDcmc5V29hRVVqd2NDcWM3MzBTSGNSTXVRaHBJcnUyTU5XVkZlWG1hQUFfN1hDZUVyRUF2cHdNZGZJdmNFN0hZT0hlekRjMDY2R25qc2pWcTdJZGtrZUoweUxiX2gzam82d3lZdEU1MW1NMHhJWEozell3ZGRETnFlR1YxZXJ4MTRRT1l0ZkQ?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Solana Prediction Market TBD Secures Pivotal $3M Seed Funding from Major Crypto VCs - CryptoRank",
+          "source": "CryptoRank",
+          "published": "Wed, 25 Feb 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0NmgxTmZ2ZlNsaVV6ank4d3RzX3R1X1dYb2cxdjY5d0UwYlNMMUE0ZHVjMTZta2wxbTRabnlPd3RkTG1WUzRhQ2ZpcUNQM2pCc250TnhpV1RGQUlJNkY5RW5QQ1VTaWtFeHByTUd2YldGdGhNTHZCaEJxdGtFbG8?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Pixie Chess raises $5.2 million - BlockchainGamerBiz",
+          "source": "BlockchainGamerBiz",
+          "published": "Fri, 10 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFpmZWFSTHRQVVdqdXA2aHdBbUw4RDhLdjA5MmVmZi0wNWE5ZzI1QVkzTjhXMjA2aDQycmZObmN6QXo3QXVZR1VXVnFWdmd2NzJhSGlfU2ptSHVSN1dET1hEbnF2TVEtcU81MkxGWnFaX0hqSl9WR2dLQmVYRWhzRXkySjhsLW5SaXlGOVI0RkRYT0s4aTRzckdFMNIBoAFBVV95cUxPdFVpemtQSlo5YUJod1JTY3czYjVKbHRzazJjdjlmbUdFSmN2Yi0xMzBGY1V1LVRSQmJlTzZjRy01SlNIQ3Jfem5EOGU3WEFSVTQyZjR0N3JLMWNhMWlWdkRpcEk1Sm41RUM1V3QtS2xFWko3LXloNDlLbVJrY0RDVmRvWDJEZHNQVFRicFhxZFJpUXNNQlZjLXJFbWhkdG5Z?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "A16z Crypto invests $50 million in Solana's Jito via private token sale - The Block",
+          "source": "The Block",
+          "published": "Thu, 16 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcVcxRFlLRFMzQ0xiUUlDZjVmdXctUjJtYlJ1X19ENk5tdHhrTC02ZHlHaHZOM1N1YlN5RlNGSW42ZER2T1dxV0h6eURsMUE3YXpLUE5KS2NnR0Q4YjBRY3ZqZVU1blpxdV9NYUpPMmlSdTRONC1KYXlzSnlVSHFSZllteTJMb05laERRZmJ3WnE1eTBJYUw4NVlzemRPYktadTBfdWlDUGN2T3lvT3RHQmNHbw?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Digital Asset Treasuries vs Crypto Venture Funding in 2025 - insights4vc | Substack",
+          "source": "insights4vc | Substack",
+          "published": "Thu, 21 Aug 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5scVk1WEJFdjFOaEJMeUw3LWNrUzVuSTZER3BQWXBLLS1BQk8td19qRVRPMm01aVRqZHpwNW5WZVFmQUxHa0NseURFRlY1U1dEN1UzdHNyNDBxSGwxWDZSN3NseUZfV1AzNkp2bmNwMXYyYVFMc2xjNw?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Multicoin’s Kyle Samani: SEC’s ‘Project Crypto’ speech sparked Solana treasury firm launch - thestreet.com",
+          "source": "thestreet.com",
+          "published": "Tue, 07 Oct 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNemhsX0NxMmhxU25BVW9EZ3dCLTVZZVo3UXJsOUF0anZ1VlppSlJCVjZkX3VGVkdqNkxYZENZNUFKSkdNMXVFQjlVU2RmQVFFOXRwT1ZWQU5BUWlsT3NWVjNRWEVuSVhXRnJvb0pvU2NkaUlKNVBSTXdtTTBQUF9kU3RKRXRwZFl5aUJoVDJ5UFlVSGNR?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        },
+        {
+          "title": "Venture Capital Funding for Crypto Companies Is Surging (Published 2021) - The New York Times",
+          "source": "The New York Times",
+          "published": "Wed, 01 Dec 2021 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLTVHMEM1MVhhWFhPUHlmckY5VHFaOWd2Q3JSUzd2eXpNLVBQUmpUbnhiUHZnNlJVbTg0ZGQ3U0ZZbnlIdG5uQUF2LS03bkx2SWczRmNFbGZ2X0NiR201SDBiTVFWSGxqbGUtTlhyajlPcDRpUTNTV0ZiNGtyRzJiaVNLZ05BTmc?oc=5",
+          "query": "\"solana\" crypto funding investors venture"
+        }
+      ]
+    },
+    "unlocks": {
+      "defillama_emissions": {},
+      "news": [
+        {
+          "title": "Pump.Fun’s First Major Vesting Unlock: Here’s What Happened - TradingView",
+          "source": "TradingView",
+          "published": "Wed, 15 Jul 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOWtKNEZoMkJmR0JWeXZXc3hRanFHa2tweHJyRWVDS2dyTzI5QjhBZWkyVXJHNEg4dnpuWEFRZTlRX3NrXzB4R2N5TVc1dHcwODVqNVJDcHVWUjNta3ZtYTNGVEV0QjNQVEFzM05UclZYRV9HTGljVXhYM0hCc1FrdDJZWFlMUU1ZVTZIYmpMa2Z3RGFMMG56SlBrNlUwUU14dmN3VjVVZmRYU0N0X1F6SlFYSVdNdS0yazJz?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        },
+        {
+          "title": "Solana privacy layer Umbra launches confidential vesting with Streamflow targeting $97B token unlock market - The Block",
+          "source": "The Block",
+          "published": "Tue, 26 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQekkyQ0k2LTBMZGxQN0t0eDZSTmFGSkF6SGxjVWtXaDhBeDM1anppc1VJZTRPOFFZVnp0a2UwRHA4dlVxVVhNN1MxQWstVUZRXzNGU19YZGsyX1pwa0p2TE9VWG9tOW0xNko4aUxkTEY2VXp2Q21FQWhOUmhVTEtwNmVJcl9HVUloTXVCYUlwMDFUTmVlUWxqUEp5eks0N1doRXgwMUtlWXR5RzdHSlVMZXZHRW9GRWEzX1VvYW9Vdmdpbkw1ZkhhY0VnOHkwNHJxME84dFUxbDZNZ3J1NHFLbm15RHRQOWtPU3RKTmFlR2MyODViS1Zz?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        },
+        {
+          "title": "What is a token unlock? Vesting, cliffs, and supply schedules explained - Crypto News",
+          "source": "Crypto News",
+          "published": "Tue, 14 Jul 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE13Tjg3VW8ybmZmWFFKTC1OYlhEeVNoQnBHS0d0ZW54amJGVm4wODhsaDN5YlREYmZtdkg3dGd0Yi1WdXVkSk1rOWdhNTZTSTA3OHpxTVdweFAwNnlNbzRydENaSnpscjJoZUxpd0VCZlpOc0lVN1FPUUFUOA?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        },
+        {
+          "title": "Umbra and Streamflow Launch Private Token Vesting on Solana - FF News",
+          "source": "FF News",
+          "published": "Wed, 27 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNmhvWkpJVmNXTkRRbE54U29lRjBobHF5M3NmLTVySC1xN2xpcmVUUWNWM0RhczlvbkI5cmJTVE5QZlZQYmtNbnFGRm9GM2tUdE1zNEdFb045a1Z6M25sOGtJSG9GNjdSUW1UTVNlZjc5dDlzR2JVWUIxVlhRTks5Sk9pOWlnYkF3bEJN?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        },
+        {
+          "title": "Solana ecosystem prepares for significant token unlocks in June 2026 - Bitget",
+          "source": "Bitget",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4xRFpXS2xNV2l1a2J0WWdwZ2FoZ1JnR1A4T0lKc3JYUE40ZDAtM052N2U3TFU4NTk4b3N4bi1BU0ZZNXhQeDc0MGtsR2dRakdYODF0S2xWdjhMOUxQUGfSAWNBVV95cUxQYXFDN2Z0ZFFfYzlzRm1uVFh2MTJDUVkwQVY0M0ZYSWNlcHJEVFpBSmlUT0ZEYWpROTFDbWN6X1dRR2lFY2djRWVTTmFpMThON0ZqMkJTVVNHcE9rMm5VZjhnbXc?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        },
+        {
+          "title": "Largest Single-Day Unlock of Staked SOL Triggers $50 Million Sell-Off - Yellow.com",
+          "source": "Yellow.com",
+          "published": "Mon, 07 Sep 2026 09:47:41 GMT",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcUpNakdjSm9yWTk4OE1GTl9wSGljeWU2Y1FacjFCdEJjaGdZQTRSeU9obW1NaGxfdVRaVFJuSFlhcmIydHpfdDllYzlyN1RTS19uelV1OER2cGVDaExxNWhtU2RnbEEzZ0pZNkxpN1Y2NDBNRXNrUDFBbGhTZ1dEdFVXMlZKaWJLdmMxZmhHTEZfTXdZTFZrbDRmTEVFaS1LQ0FldmFsY3REMWx6SDAwdjUzWFliMnhOeXo5YnJTUUhNWnFkcWpB?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        },
+        {
+          "title": "Upcoming July 2026 Token Unlocks: PUMP, WLD, XPL and Their Market Impact - kucoin.com",
+          "source": "kucoin.com",
+          "published": "Fri, 27 Mar 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tT1dxNS1WZjltcTBMUGxmSDdtU0JVbkxnZ2NqcE0yUlJlQzlnZGNaWk5TQzQyVjBvaUlCejQwd0doMjdHZlAta3hNZzJRc05wVTU0V05vV1NXMmg0OUFwMW1qUzBmVHF2ZU9wWQ?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        },
+        {
+          "title": "Pump Fun is unlocking $127M insider tokens worth double PUMP’s recent daily volume - CryptoRank",
+          "source": "CryptoRank",
+          "published": "Wed, 08 Jul 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSXJIdURSVXMwbDU3VjNhRFB2czhTU0RkS1ExNVYwN29Ma0hXSjZCU1pTaXFTdUUxOTc5LVM3bnJDM24wVGtUS0lLRnBETGNzWndjT0M0R244aktXdmRQSXJyVzJPLW1WMHUzLUhJSWhzQ05rLXJZYWcyYjAwVHRaanVzSTlIVGt1b25KWGNaamlDYjJyMzhCOTFMWUNSZXVGenNWMklrc1M4LXZ5WW1jTGxpUEhlRkZ3R3o1MzdXelZSZw?oc=5",
+          "query": "\"solana\" token unlock vesting investors"
+        }
+      ],
+      "note": "No investor/team unlock figure is invented when a public source does not provide one."
+    },
+    "history": {
+      "genesis_date": null,
+      "items": [
+        {
+          "title": "Is the Solana Network Reliable? Outage History and Upgrade Roadmap Explained - MEXC",
+          "source": "MEXC",
+          "published": "Tue, 22 Sep 2026 16:47:37 GMT",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNU3RocHVNSFM5Y0ZCM1BRQ0psSHlMZWVwMmNlSWU4T2ZmbzBPQnpad3JlNkxlX2hyQ0RIMmlZVFAwZFZSNG1ONnpSQmhXdlZNVUxIMmxRWWVQR3NiQXVaajlZTWhNYm5IZUs4LXZ4bzRMS3k2emZ6dEtIaUM0eXJLVjF5ZUJQRVhlWm05dDFFeVlaZzRRMldfeDFIYUxSQmNIUDREaElYZDNXMS1FcVBHZENB?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        },
+        {
+          "title": "Should You Buy Solana Before the Alpenglow Upgrade? - 24/7 Wall St.",
+          "source": "24/7 Wall St.",
+          "published": "Mon, 25 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbXc2Rk9hNVo1UEl6MXhiVGV5NmJPbHZWT2lmbVp6ZTRzLTJuZUo1V3NTZlhoZjdiZHZya19JY2lPRnB2YnZfdnE1THJSS0lSUlNfRUNZanR5Wk9YcEZmMlpUb19vM29lZ3plWHNLVVpCZHg3QjhBMjU0WjA4RGV3bEUzbnVYQ3B0M3Vrc00tQTFpMHFEQ0hDVURn?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        },
+        {
+          "title": "5 Years of Solana: From Scalable Blockchain to Global Settlement Layer - Ledger",
+          "source": "Ledger",
+          "published": "Fri, 09 Jan 2026 08:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBiRC1STlVOU0hLUFNmdXJ0c0dLSy1PQlAyZEhBdjRRMU1jLTdLYm5RNEtuM0dvUHktT2k4dFFsV1RfSDFfRUc3d2tBbWFrNlRraXdRZVF1TGpsSVZfcVUta29OYzVJU1NRZElERDUzZkt5ckV0?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        },
+        {
+          "title": "Solana launches P-Token upgrade with 20x efficiency boost on mainnet, price to $150? - Crypto News",
+          "source": "Crypto News",
+          "published": "Wed, 13 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTWVOYmxNcGg5T0dYZFNlZGFWZDJTclJLSDZ0Xzg2SUFBRHhuNHZoT3RzMldRdldZUWlzTkxEbk9FbkotLXlxcEh3Ul9YMHZRUEdRU2I4UkNWOWpVVlFnLVhQMHZiRXlHcl9sT3l0dXE1YlF5bTVvUzU0dG54RkM1YmZRV1doNGdJd0xDajMzVG1pamdRSDRtMFduZWw1ZjIwM0V5dg?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        },
+        {
+          "title": "Solana Activates Alpenglow Upgrade: What It Means for SOL - TradingView",
+          "source": "TradingView",
+          "published": "Tue, 12 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTVdUbzZ6Q3BZWWdKQ0pHekFKWWlnQ1V0SUhaa3pnYXAwSk5VVG84NFZkM2d3aUprVlRaRTRJc1ZLb1lxZUxwT0pIU3pSRGRubkh0UU9RWk9YdFRreHV1TVhyRUx3VFZiMEdmcEFNR1pGdmlhZ3dVSDF0Y3ZfWGtHNjBfdENPMS1WSVppamVsX1Z1bWJfLXc2ajg4emtjVEh1UVA5WF9OVERHN0d0WlpTUTF4U1k0SmxF?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        },
+        {
+          "title": "Monad Promises 10,000 TPS, But Can Any L1 Actually Deliver It? - Yellow.com",
+          "source": "Yellow.com",
+          "published": "Tue, 15 Sep 2026 01:52:30 GMT",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORzlGREtPaXNzbmhpU2pUUFhCQVNrYzc5Q0NpTTlHdzh1M0xSSG5TX1JQT1NWMzdSRndKSV9pNWdWcTFTVXlZODRBNzJmSzdpcjYzd1FuM0tqZDh6SVg5Z1dCQXFGSEFwOU1iaDBjZ29oT2pUT0xNaDhUejRKUWV2aDY1eXJNeHFGRDlZMnNobzE?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        },
+        {
+          "title": "The Protocol: Solana’s ‘Alpenglow’ upgrade is live for testing - CoinDesk",
+          "source": "CoinDesk",
+          "published": "Wed, 13 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPamlqa1pDZ0s5dHJianU1OWFnODFxQnV0UldGVzM2NEYzSC1YMVZXZm1EVGpOeFRjYnd3QUlUX1U5Z0ZfMnBkU0lCdjJUMUIyakRTWk16WWViT1U0NDdPZG5ZcDZCVFJ6RFNRRVNvUFV0TlZCTVlWVnE4aVpLTElzelFWQ19TTkRVRVBNWGE4Y19NQndzZjB3MlJPNjByR2VvdVE?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        },
+        {
+          "title": "Solana's biggest upgrade in history is now live for testing. Here's what Alpenglow actually changes. - thestreet.com",
+          "source": "thestreet.com",
+          "published": "Fri, 15 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcHk2VlRqbS1FRmJYUGxvQUh2enVqVVQwdUFGdEMxU2Y2NmQwd0VXdW8wZEUtelVmQm05alJhT09DeHAyeUFLNHhBZ2VscmlxRGJ5NS13NS14Z3RHcldaZ2ExRE1JUng4WWl2OVJUZUtmN3RwZjA2eUl2VGpiUXRiRmVXVEgyR1duNjAtS1Y4eWdKM3MwSl80VC1EaXN0aDdXUnhETQ?oc=5",
+          "query": "\"solana\" crypto launch mainnet history"
+        }
+      ]
+    },
+    "ecosystem": {
+      "defillama": {
+        "id": "4611",
+        "name": "Solana",
+        "address": null,
+        "symbol": "SOL",
+        "url": "https://solana.com/",
+        "description": "Bring blockchain to the people. Solana supports experiences for power users, new consumers, and everyone in between.",
+        "logo": "https://icons.llamao.fi/icons/protocols/solana",
+        "audits": "0",
+        "gecko_id": "solana",
+        "cmcId": "5426",
+        "category": "Canonical Bridge",
+        "chains": [],
+        "module": "dummy.js",
+        "twitter": "solana",
+        "listedAt": 1715748037,
+        "misrepresentedTokens": false,
+        "tvlCodePath": null,
+        "slug": "solana",
+        "tvl": null,
+        "chainTvls": {},
+        "change_1h": null,
+        "change_1d": null,
+        "change_7d": null,
+        "tokenBreakdowns": {},
+        "mcap": 66959963256.84364
+      },
+      "tvl": null,
+      "chains": [],
+      "category": "Canonical Bridge",
+      "url": "https://solana.com/",
+      "description": "Bring blockchain to the people. Solana supports experiences for power users, new consumers, and everyone in between."
+    },
+    "github": {
+      "repository": "https://github.com/solana-labs/solana",
+      "repository_name": "solana-labs/solana",
+      "description": "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.",
+      "stars": 14942,
+      "forks": 5866,
+      "open_issues": 265,
+      "watchers": 14942,
+      "default_branch": "master",
+      "created_at": "2018-02-14T04:26:27Z",
+      "updated_at": "2026-09-22T20:54:47Z",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "topics": [
+        "bitcoin",
+        "blockchain",
+        "ledger",
+        "performance-blockchain",
+        "rust",
+        "rustc",
+        "solana"
+      ]
+    },
+    "events": {
+      "news": [
+        {
+          "title": "Solana Foundation unveils security overhaul days after $270 million Drift exploit - CoinDesk",
+          "source": "CoinDesk",
+          "published": "Tue, 07 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMWZSSHQxTmszQUhqRmpSSHdVUUphb2ZpcHJHR2xub0FZeDl6Z3FqUFZCRVYtZFVnY1RMMjViOWxPbW1fN25VekQ2OVdGNmw1M2RSU1hmclh4NmRGenhkb19EWnJXZEJNVkR4andWM1lwNmpzYXE1bkJDZkM4OUJzR1NxZ1lmUTVwdXROTmFpWUhIdTQzeFVRdGRxckE4UUIwa3Fpb2hUaUIyVDBpekpUbXo2Z01EOWNaSWcyRENoajBwUQ?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "The $292M crypto hack exposed DeFi's weak spots. Here’s what must change, insiders say - CoinDesk",
+          "source": "CoinDesk",
+          "published": "Sat, 02 May 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLW1tYmNjckpST0doR0VtMWMwWkNadDRyM0d4azFjWlJaN3pvUW03U09OVzJfeEJ2d1p6ZGNPVktiVlBCY0FyYzVtODVvejRRY09xWUUwLUVsdE1qeHA1ak81elMycjY5UVpUbEw5Ul9zS0w3RldyVUlVWnNEdlpFVElLNmZTbGlFblBXUTlaOXpYY3lSUENNQndaenYwZ0I3TnJzM1dZdm0tMjFkeDI3ODJ1czhMRXJRVGx1akRlVThuZGpWTW1oZ1o3UQ?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "Drift says $270 million exploit was a six-month North Korean intelligence operation - CoinDesk",
+          "source": "CoinDesk",
+          "published": "Sun, 05 Apr 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPX1B2LVFlT08xWmQ1TXNtaHd1NWw1TWFSUTcxdFZnSEV4eURQX0lFd1hLTmpzNG41Mk1ReWpDd1RzQVk4WXNtMmJYT0QyMk9tV21pMWFwQkdYX3Y1ZWVmZkUzbC1mOVFqeHBwODRCejdNdGN1eTA2dzg5UVpGOHphQVRrM1NUaDZpQlJ0WXRPYnN6RW5mR3JNYmM1TDN0Vy1QZlhDV21IN3hBZDlpSDZMSWxiUGhuTWdId1hDTGJzelV6alhFNGxmcQ?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "Inside Jump Crypto: $1.3B Terra Trade, $321M Wormhole Rescue & More - insights4vc | Substack",
+          "source": "insights4vc | Substack",
+          "published": "Thu, 17 Jul 2025 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kbjlaZWJEdFFEc1VET2lwZDFIS0JaVjFHLU8tMWloanV1VVdicTI5Y2pWWktKamZUUURoNlcxbVo3TG42TWZfd3EzN0FGcE1OV1U3ZEtNQWN5TFdyMkVxaVR6eTZodllQdldRUjY2d0YxdkRkMGdhSQ?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "Alexey Pertsev Sentenced, Wisconsin’s Bitcoin Investment - unchainedcrypto.com",
+          "source": "unchainedcrypto.com",
+          "published": "Fri, 17 May 2024 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWXYwYkc2YmRaQVk1MnNiUHowSmMwMC1YRHRTMHc5UEhPb2diV2ZGYXpkcDlWRU0ycEdyY1ZhTHBNM1JVa1VMQjVjMkpEUlp4aG12eERDWFMwUVdhby1fLUx4ZEV3czF4Vmoyam9MaWhvb1JnUks1MG12R3hVSlIwN2xtei1YMl9UaS1v?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit - CoinDesk",
+          "source": "CoinDesk",
+          "published": "Sat, 01 Aug 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZTltR3MyWUNaZHZnSG1DOFVCNkdSX3k4UExZTmdPa0FEMUhIODJoNjNhekdhWk51VUIzX29tc19mY3RjZWpBVUxfMkhVSEJZc211aU5DYWhQb2hzVTlZYU4wSFJZejNiclBmV3RqVngwdWpSaG9yb19sYVVvdDh1b21CRzhHYlRLSmZmWnBFSENEOXJINDhYd1lTb1RvWjFWMHFWcm5NZFNGc2lmMDQ5c3hoVG5OajFxQ2MyN2NkbGZIRjN6enFwYjJ3TQ?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "Crypto casino Metawin loses $4 million to exploit of Ethereum, Solana hot wallets - The Block",
+          "source": "The Block",
+          "published": "Sun, 03 Nov 2024 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOOFVQNXFMWjBNY2V5c1J6bnZhaDFmcVAxODBISmE0Z0l1OGw2eDI4RWlwdUtfdFB4T0lscnRnMTlXc0NWS045bnJfMWlaTUFjNnRoOG5hTF9nRHl2WVZzd21xX19DbWt5ZTRMRmg1YklaSkJpY0RJaFZJYU5KSUxoMmJ2WDZXYWJXNXNhSDY3NVlLSTlRdFhUQmlyY0g5TUluYlptN1ZDbDljZmJLWTc0QmtNUkZoc3hkVnRZbU84Q3BrQ1NoTFRaWlpsYzNaQzJYaTVn?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        },
+        {
+          "title": "Private keys, not smart contracts, caused 40% of crypto's $16 billion hack losses. Here's whats being done. - CoinDesk",
+          "source": "CoinDesk",
+          "published": "Mon, 29 Jun 2026 07:00:00 GMT",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOaGJwX2ItUlN0LUlQU1RQWDg3emg5cUJsQlkwdVNqT0JGUUVoeG5wR2I3a2RaQk1oNFprbzFwWE1uMUFicDd0YldhcDVxTkdMQUE3akVZbG5tZTNuSll1VTdkdU9jVElVZkdkNHdhcGRmNjJqcEtya0M0LU9VdTRiYXZrVXpIb1U3TXgtQ0FsQUtjS2tPQi1NdE0taWJMV1U0aF9sZjJHallqOE5pU052TjVoU0hjQTU4NkVuS3lwaFR0RElLZmplMUl4YUNnLVBjR2dzbkNHY2NMTUNUb1E?oc=5",
+          "query": "\"solana\" crypto partnership upgrade launch hack exploit regulation"
+        }
+      ],
+      "note": "Events are collected from public news search results and should be verified before being treated as definitive project history."
+    },
+    "risks": [
+      "No automatic high-priority risk flag was derived from the collected public metrics."
+    ],
+    "community": {
+      "twitter_followers": null,
+      "reddit_subscribers": null,
+      "telegram_channel_user_count": null
+    },
+    "developer": {},
+    "sources": {
+      "coingecko": "https://www.coingecko.com/en/coins/solana",
+      "yahoo_finance": null,
+      "defillama": "https://solana.com/",
+      "github": "https://github.com/solana-labs/solana"
+    }
+  }
+}

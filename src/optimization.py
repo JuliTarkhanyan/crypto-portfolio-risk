@@ -1,532 +1,626 @@
 import numpy as np
-import pandas as pd
 from scipy.optimize import minimize
 
-TRADING_DAYS = 365
 
-
-# ==========================================
-# Helper
-# ==========================================
+# ============================================================
+# HELPERS
+# ============================================================
 
 def normalize_weights(weights):
-    """
-    Make sure weights sum to 1.
-    """
-
     weights = np.asarray(weights, dtype=float)
 
     total = weights.sum()
 
     if total <= 0:
-        raise ValueError("Weights must have a positive sum.")
+        return np.ones(len(weights)) / len(weights)
 
     return weights / total
 
 
-# ==========================================
-# 1. Equal Weight
-# ==========================================
-
-def equal_weight(returns):
+def prepare_returns(returns):
     """
-    Allocate the same percentage to every asset.
+    Clean returns data before optimization.
+    Keeps the same assets throughout the optimization process.
     """
 
-    n = len(returns.columns)
+    if returns is None:
+        raise ValueError(
+            "Returns data is required."
+        )
 
-    return np.ones(n) / n
+    if returns.empty:
+        raise ValueError(
+            "Returns data is empty."
+        )
 
+    cleaned = returns.copy()
 
-# ==========================================
-# 2. Inverse Volatility
-# ==========================================
-
-def inverse_volatility(returns):
-    """
-    Allocate more weight to assets
-    with lower volatility.
-    """
-
-    volatility = (
-        returns.std()
-        * np.sqrt(TRADING_DAYS)
+    # Remove columns that contain no usable data
+    cleaned = cleaned.dropna(
+        axis=1,
+        how="all",
     )
 
-    inverse = 1 / volatility
+    # Forward fill missing values
+    cleaned = cleaned.ffill()
 
-    weights = inverse / inverse.sum()
+    # Remove rows that still contain missing values
+    cleaned = cleaned.dropna()
+
+    if cleaned.empty:
+        raise ValueError(
+            "No usable return observations found."
+        )
+
+    if len(cleaned.columns) == 0:
+        raise ValueError(
+            "No usable assets found."
+        )
+
+    return cleaned
+
+
+# ============================================================
+# EQUAL WEIGHT
+# ============================================================
+
+def equal_weight(returns):
+
+    n_assets = len(returns.columns)
+
+    if n_assets == 0:
+        return np.array([])
+
+    return np.ones(n_assets) / n_assets
+
+
+# ============================================================
+# INVERSE VOLATILITY
+# ============================================================
+
+def inverse_volatility(returns):
+
+    volatility = returns.std()
+
+    volatility = volatility.replace(
+        0,
+        np.nan,
+    )
+
+    inverse_vol = 1 / volatility
+
+    inverse_vol = (
+        inverse_vol
+        .replace(
+            [np.inf, -np.inf],
+            np.nan,
+        )
+        .fillna(0)
+    )
+
+    if inverse_vol.sum() == 0:
+        return equal_weight(returns)
+
+    weights = (
+        inverse_vol
+        / inverse_vol.sum()
+    )
 
     return weights.values
 
 
-# ==========================================
-# 3. Minimum Volatility
-# ==========================================
+# ============================================================
+# PORTFOLIO VOLATILITY
+# ============================================================
 
-def minimum_volatility(returns):
-    """
-    Find the portfolio with the lowest
-    historical volatility.
+def portfolio_volatility(
+    weights,
+    covariance_matrix,
+):
 
-    Constraints:
-        sum(weights) = 1
-        0 <= weight <= 1
-    """
-
-    covariance = (
-        returns.cov().values
-        * TRADING_DAYS
+    annual_covariance = (
+        covariance_matrix * 365
     )
 
-    n = len(returns.columns)
+    variance = (
+        weights.T
+        @ annual_covariance.values
+        @ weights
+    )
 
-    initial = np.ones(n) / n
-
-    def objective(weights):
-
-        variance = (
-            weights.T
-            @ covariance
-            @ weights
+    return np.sqrt(
+        max(
+            variance,
+            0,
         )
+    )
 
-        return np.sqrt(
-            max(variance, 0)
-        )
 
-    constraints = {
-        "type": "eq",
-        "fun": lambda w: np.sum(w) - 1
-    }
+# ============================================================
+# MINIMUM VOLATILITY
+# ============================================================
+
+def minimum_volatility(returns):
+
+    covariance_matrix = returns.cov()
+
+    n_assets = len(
+        returns.columns
+    )
+
+    initial_weights = (
+        np.ones(n_assets)
+        / n_assets
+    )
+
+    constraints = [
+        {
+            "type": "eq",
+            "fun": lambda weights:
+                np.sum(weights) - 1,
+        }
+    ]
 
     bounds = [
         (0, 1)
-        for _ in range(n)
+        for _ in range(n_assets)
     ]
 
     result = minimize(
-        objective,
-        initial,
+        lambda weights:
+            portfolio_volatility(
+                weights,
+                covariance_matrix,
+            ),
+        initial_weights,
         method="SLSQP",
         bounds=bounds,
-        constraints=constraints
+        constraints=constraints,
     )
 
-    if not result.success:
-        raise ValueError(result.message)
+    if result.success:
+        return normalize_weights(
+            result.x
+        )
 
-    return normalize_weights(result.x)
+    return initial_weights
 
 
-# ==========================================
-# 4. Maximum Sharpe
-# ==========================================
+# ============================================================
+# MAXIMUM SHARPE
+# ============================================================
 
 def maximum_sharpe(
     returns,
-    risk_free_rate=0
+    risk_free_rate=0.0,
 ):
-    """
-    Find the portfolio with the
-    maximum historical Sharpe ratio.
-    """
 
-    mean_returns = (
-        returns.mean().values
-        * TRADING_DAYS
+    expected_returns = (
+        returns.mean()
+        * 365
     )
 
-    covariance = (
-        returns.cov().values
-        * TRADING_DAYS
+    covariance_matrix = returns.cov()
+
+    n_assets = len(
+        returns.columns
     )
 
-    n = len(returns.columns)
+    initial_weights = (
+        np.ones(n_assets)
+        / n_assets
+    )
 
-    initial = np.ones(n) / n
+    def negative_sharpe(weights):
 
-    def objective(weights):
-
-        portfolio_return = (
-            weights @ mean_returns
+        annual_return = (
+            weights
+            @ expected_returns.values
         )
 
-        portfolio_variance = (
-            weights.T
-            @ covariance
-            @ weights
+        volatility = portfolio_volatility(
+            weights,
+            covariance_matrix,
         )
 
-        volatility = np.sqrt(
-            max(portfolio_variance, 0)
-        )
-
-        if volatility == 0:
-            return 1e6
+        if volatility <= 0:
+            return 0
 
         sharpe = (
-            portfolio_return
+            annual_return
             - risk_free_rate
         ) / volatility
 
         return -sharpe
 
-    constraints = {
-        "type": "eq",
-        "fun": lambda w: np.sum(w) - 1
-    }
+    constraints = [
+        {
+            "type": "eq",
+            "fun": lambda weights:
+                np.sum(weights) - 1,
+        }
+    ]
 
     bounds = [
         (0, 1)
-        for _ in range(n)
+        for _ in range(n_assets)
     ]
 
     result = minimize(
-        objective,
-        initial,
+        negative_sharpe,
+        initial_weights,
         method="SLSQP",
         bounds=bounds,
-        constraints=constraints
+        constraints=constraints,
     )
 
-    if not result.success:
-        raise ValueError(result.message)
+    if result.success:
+        return normalize_weights(
+            result.x
+        )
 
-    return normalize_weights(result.x)
+    return initial_weights
 
 
-# ==========================================
-# 5. Risk Parity
-# ==========================================
+# ============================================================
+# RISK PARITY
+# ============================================================
 
 def risk_parity(returns):
-    """
-    Find weights where assets contribute
-    approximately equally to portfolio risk.
-    """
 
-    covariance = (
+    covariance_matrix = (
         returns.cov().values
-        * TRADING_DAYS
+        * 365
     )
 
-    n = len(returns.columns)
+    n_assets = len(
+        returns.columns
+    )
 
-    initial = np.ones(n) / n
+    initial_weights = (
+        np.ones(n_assets)
+        / n_assets
+    )
 
     def objective(weights):
 
         portfolio_variance = (
             weights.T
-            @ covariance
+            @ covariance_matrix
             @ weights
         )
 
-        volatility = np.sqrt(
-            max(portfolio_variance, 1e-12)
+        if portfolio_variance <= 0:
+            return 0
+
+        marginal_contribution = (
+            covariance_matrix
+            @ weights
         )
 
-        marginal_risk = (
-            covariance @ weights
-        )
-
-        contribution = (
+        risk_contribution = (
             weights
-            * marginal_risk
-            / volatility
+            * marginal_contribution
         )
 
-        target = volatility / n
+        target = (
+            portfolio_variance
+            / n_assets
+        )
 
         return np.sum(
-            (contribution - target) ** 2
+            (
+                risk_contribution
+                - target
+            ) ** 2
         )
 
-    constraints = {
-        "type": "eq",
-        "fun": lambda w: np.sum(w) - 1
-    }
+    constraints = [
+        {
+            "type": "eq",
+            "fun": lambda weights:
+                np.sum(weights) - 1,
+        }
+    ]
 
     bounds = [
-        (0.0001, 1)
-        for _ in range(n)
+        (0, 1)
+        for _ in range(n_assets)
     ]
 
     result = minimize(
         objective,
-        initial,
+        initial_weights,
         method="SLSQP",
         bounds=bounds,
-        constraints=constraints
+        constraints=constraints,
     )
 
-    if not result.success:
-        raise ValueError(result.message)
+    if result.success:
+        return normalize_weights(
+            result.x
+        )
 
-    return normalize_weights(result.x)
+    return initial_weights
 
 
-# ==========================================
-# 6. Maximum Diversification
-# ==========================================
+# ============================================================
+# MAXIMUM DIVERSIFICATION
+# ============================================================
 
 def maximum_diversification(returns):
-    """
-    Maximize the diversification ratio:
 
-        weighted average asset volatility
-        --------------------------------
-        portfolio volatility
-    """
+    covariance_matrix = returns.cov()
 
-    covariance = (
-        returns.cov().values
-        * TRADING_DAYS
+    asset_volatility = returns.std()
+
+    n_assets = len(
+        returns.columns
     )
 
-    asset_volatility = (
-        returns.std().values
-        * np.sqrt(TRADING_DAYS)
+    initial_weights = (
+        np.ones(n_assets)
+        / n_assets
     )
 
-    n = len(returns.columns)
+    def negative_diversification(
+        weights
+    ):
 
-    initial = np.ones(n) / n
-
-    def objective(weights):
-
-        portfolio_volatility = np.sqrt(
-            weights.T
-            @ covariance
-            @ weights
+        portfolio_vol = (
+            portfolio_volatility(
+                weights,
+                covariance_matrix,
+            )
         )
 
-        weighted_volatility = (
+        weighted_asset_volatility = (
             weights
-            @ asset_volatility
+            @ (
+                asset_volatility.values
+                * np.sqrt(365)
+            )
         )
 
-        if portfolio_volatility == 0:
-            return 1e6
+        if portfolio_vol <= 0:
+            return 0
 
         diversification_ratio = (
-            weighted_volatility
-            / portfolio_volatility
+            weighted_asset_volatility
+            / portfolio_vol
         )
 
         return -diversification_ratio
 
-    constraints = {
-        "type": "eq",
-        "fun": lambda w: np.sum(w) - 1
-    }
+    constraints = [
+        {
+            "type": "eq",
+            "fun": lambda weights:
+                np.sum(weights) - 1,
+        }
+    ]
 
     bounds = [
         (0, 1)
-        for _ in range(n)
+        for _ in range(n_assets)
     ]
 
     result = minimize(
-        objective,
-        initial,
+        negative_diversification,
+        initial_weights,
         method="SLSQP",
         bounds=bounds,
-        constraints=constraints
+        constraints=constraints,
     )
 
-    if not result.success:
-        raise ValueError(result.message)
+    if result.success:
+        return normalize_weights(
+            result.x
+        )
 
-    return normalize_weights(result.x)
+    return initial_weights
 
 
-# ==========================================
-# 7. Target Volatility
-# ==========================================
+# ============================================================
+# TARGET VOLATILITY
+# ============================================================
 
 def target_volatility(
     returns,
-    target=0.30
+    target=0.40,
 ):
-    """
-    Find the portfolio whose volatility
-    is closest to the requested target.
-    """
 
-    covariance = (
-        returns.cov().values
-        * TRADING_DAYS
+    covariance_matrix = returns.cov()
+
+    n_assets = len(
+        returns.columns
     )
 
-    n = len(returns.columns)
-
-    initial = np.ones(n) / n
+    initial_weights = (
+        np.ones(n_assets)
+        / n_assets
+    )
 
     def objective(weights):
 
-        variance = (
-            weights.T
-            @ covariance
-            @ weights
-        )
-
-        volatility = np.sqrt(
-            max(variance, 0)
+        volatility = (
+            portfolio_volatility(
+                weights,
+                covariance_matrix,
+            )
         )
 
         return (
             volatility - target
         ) ** 2
 
-    constraints = {
-        "type": "eq",
-        "fun": lambda w: np.sum(w) - 1
-    }
+    constraints = [
+        {
+            "type": "eq",
+            "fun": lambda weights:
+                np.sum(weights) - 1,
+        }
+    ]
 
     bounds = [
         (0, 1)
-        for _ in range(n)
+        for _ in range(n_assets)
     ]
 
     result = minimize(
         objective,
-        initial,
+        initial_weights,
         method="SLSQP",
         bounds=bounds,
-        constraints=constraints
+        constraints=constraints,
     )
 
-    if not result.success:
-        raise ValueError(result.message)
+    if result.success:
+        return normalize_weights(
+            result.x
+        )
 
-    return normalize_weights(result.x)
+    return initial_weights
 
 
-# ==========================================
-# Main function
-# ==========================================
+# ============================================================
+# MAIN OPTIMIZATION FUNCTION
+# ============================================================
 
 def calculate_weights(
-    method,
     returns,
-    target_vol=0.30
+    method="Equal Weight",
+    target_volatility_value=0.40,
 ):
+    """
+    Calculate portfolio weights using
+    different portfolio optimization methods.
+
+    Returns:
+        numpy.ndarray
+        One weight per cryptocurrency.
+    """
+
+    returns = prepare_returns(
+        returns
+    )
+
+    n_assets = len(
+        returns.columns
+    )
+
+    # --------------------------------------------------------
+    # ONE ASSET
+    # --------------------------------------------------------
+
+    if n_assets == 1:
+        return np.array([1.0])
+
+    # --------------------------------------------------------
+    # EQUAL WEIGHT
+    # --------------------------------------------------------
 
     if method == "Equal Weight":
-        return equal_weight(returns)
 
-    if method == "Inverse Volatility":
-        return inverse_volatility(returns)
+        weights = equal_weight(
+            returns
+        )
 
-    if method == "Minimum Volatility":
-        return minimum_volatility(returns)
+    # --------------------------------------------------------
+    # INVERSE VOLATILITY
+    # --------------------------------------------------------
 
-    if method == "Risk Parity":
-        return risk_parity(returns)
+    elif method == "Inverse Volatility":
 
-    if method == "Maximum Sharpe":
-        return maximum_sharpe(returns)
+        weights = inverse_volatility(
+            returns
+        )
 
-    if method == "Maximum Diversification":
-        return maximum_diversification(returns)
+    # --------------------------------------------------------
+    # MINIMUM VOLATILITY
+    # --------------------------------------------------------
 
-    if method == "Target Volatility":
-        return target_volatility(
+    elif method == "Minimum Volatility":
+
+        weights = minimum_volatility(
+            returns
+        )
+
+    # --------------------------------------------------------
+    # MAXIMUM SHARPE
+    # --------------------------------------------------------
+
+    elif method == "Maximum Sharpe":
+
+        weights = maximum_sharpe(
+            returns
+        )
+
+    # --------------------------------------------------------
+    # RISK PARITY
+    # --------------------------------------------------------
+
+    elif method == "Risk Parity":
+
+        weights = risk_parity(
+            returns
+        )
+
+    # --------------------------------------------------------
+    # MAXIMUM DIVERSIFICATION
+    # --------------------------------------------------------
+
+    elif method == "Maximum Diversification":
+
+        weights = maximum_diversification(
+            returns
+        )
+
+    # --------------------------------------------------------
+    # TARGET VOLATILITY
+    # --------------------------------------------------------
+
+    elif method == "Target Volatility":
+
+        weights = target_volatility(
             returns,
-            target_vol
+            target=target_volatility_value,
         )
 
-    raise ValueError(
-        f"Unknown method: {method}"
-    )
+    else:
 
-
-# ==========================================
-# Efficient Frontier
-# ==========================================
-
-def efficient_frontier(
-    returns,
-    points=50
-):
-    """
-    Calculate portfolios along the
-    efficient frontier.
-    """
-
-    mean_returns = (
-        returns.mean().values
-        * TRADING_DAYS
-    )
-
-    covariance = (
-        returns.cov().values
-        * TRADING_DAYS
-    )
-
-    n = len(returns.columns)
-
-    min_return = mean_returns.min()
-    max_return = mean_returns.max()
-
-    target_returns = np.linspace(
-        min_return,
-        max_return,
-        points
-    )
-
-    results = []
-
-    for target in target_returns:
-
-        initial = np.ones(n) / n
-
-        def objective(weights):
-
-            variance = (
-                weights.T
-                @ covariance
-                @ weights
-            )
-
-            return np.sqrt(
-                max(variance, 0)
-            )
-
-        constraints = [
-
-            {
-                "type": "eq",
-                "fun": lambda w:
-                    np.sum(w) - 1
-            },
-
-            {
-                "type": "eq",
-                "fun": lambda w:
-                    w @ mean_returns - target
-            }
-        ]
-
-        bounds = [
-            (0, 1)
-            for _ in range(n)
-        ]
-
-        result = minimize(
-            objective,
-            initial,
-            method="SLSQP",
-            bounds=bounds,
-            constraints=constraints
+        raise ValueError(
+            f"Unknown optimization method: {method}"
         )
 
-        if result.success:
+    # --------------------------------------------------------
+    # FINAL VALIDATION
+    # --------------------------------------------------------
 
-            results.append({
-                "Return": target,
-                "Volatility": result.fun
-            })
+    weights = np.asarray(
+        weights,
+        dtype=float,
+    ).reshape(-1)
 
-    return pd.DataFrame(results)
+    if len(weights) != n_assets:
+
+        raise ValueError(
+            "Optimization returned "
+            f"{len(weights)} weights for "
+            f"{n_assets} assets."
+        )
+
+    if not np.all(
+        np.isfinite(weights)
+    ):
+
+        raise ValueError(
+            "Optimization returned "
+            "invalid weights."
+        )
+
+    weights = normalize_weights(
+        weights
+    )
+
+    return weights

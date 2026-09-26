@@ -1,0 +1,62 @@
+{
+  "cached_at": "2026-09-22T19:36:49.608887+00:00",
+  "data": {
+    "coin": {
+      "id": "blockstack",
+      "name": "Stacks",
+      "symbol": "STX"
+    },
+    "market": {
+      "current_price": null,
+      "volume_latest": null,
+      "annualized_volatility": null,
+      "maximum_drawdown": null,
+      "data_source": "Yahoo Finance"
+    },
+    "project": {
+      "name": "Stacks",
+      "symbol": "STX",
+      "type": "Cryptocurrency / digital asset",
+      "consensus": "See project documentation",
+      "description": "Stacks is a cryptocurrency or digital asset in the selected market universe. Project-specific research should be verified against its official documentation before making conclusions.",
+      "problem_solved": "Project-specific use case not yet curated in the local research profile.",
+      "use_cases": [],
+      "website": null,
+      "whitepaper": null,
+      "github": null
+    },
+    "price_history": {},
+    "tokenomics": {
+      "market_data_source": "Yahoo Finance",
+      "emission": "Verify official tokenomics documentation.",
+      "unlock_summary": "Not yet curated"
+    },
+    "investors": {
+      "type": "Not yet curated",
+      "notes": "No investor claim is inferred automatically. Verify against project disclosures."
+    },
+    "funding": {
+      "status": "Not yet curated",
+      "notes": "No funding figure is inferred automatically."
+    },
+    "unlocks": {
+      "schedule": "Not yet curated",
+      "emission": "Verify official tokenomics documentation."
+    },
+    "history": [],
+    "ecosystem": {
+      "core": [],
+      "note": "Project-specific ecosystem data is not part of the local curated profile yet."
+    },
+    "github": {
+      "repository": null,
+      "development_note": "Repository link is provided where available; detailed commit statistics are not inferred without a live repository query."
+    },
+    "events": [],
+    "risks": [
+      "Market volatility.",
+      "Token supply and vesting dynamics should be verified.",
+      "Smart-contract, governance and regulatory risks may apply depending on the asset."
+    ]
+  }
+}

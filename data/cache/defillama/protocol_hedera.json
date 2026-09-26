@@ -1,0 +1,34 @@
+{
+  "id": "5861",
+  "name": "Hedera",
+  "address": null,
+  "symbol": "HBAR",
+  "url": "https://hedera.com/",
+  "description": "Hedera enables seamless tokenization of real-world and digital assets at scale, offering unmatched performance, security, and compliance for thriving tokenized economies.",
+  "chain": "Hedera",
+  "logo": "https://icons.llamao.fi/icons/protocols/hedera",
+  "audits": "0",
+  "gecko_id": "hedera-hashgraph",
+  "cmcId": "4642",
+  "category": "Chain",
+  "chains": [
+    "Hedera"
+  ],
+  "module": "dummy.js",
+  "twitter": "hedera",
+  "tvlCodePath": null,
+  "chainTvls": {
+    "Hedera": {
+      "tvl": [],
+      "tokensInUsd": [],
+      "tokens": []
+    }
+  },
+  "tvl": [],
+  "tokensInUsd": [],
+  "tokens": [],
+  "currentChainTvls": {},
+  "raises": [],
+  "hacks": [],
+  "mcap": 4022911575.2996354
+}
